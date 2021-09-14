@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bombillos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <main id="main" class="container">
+        <section class="form_container">
+            <h1>Distribucion de bombillos</h1>
+            <form onsubmit="cargarMatrix(event);">
+                <label for="archivo">
+                    Archivo
+                    <input type="file" name="archivo" id="archivo">
+                </label>
+                <input type="submit" value="Calcular">
+            </form>
+            <h3>Respuesta:</h3>
+            <p id="contenido-archivo"></p>
+        </section>
+        <section id="focos" class="focos_container"></section>
+    </main>
+    <script src="./bombillos.js"></script>
+</body>
+</html>
